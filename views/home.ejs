@@ -1,18 +1,74 @@
 <%- include('partials/header'); -%>
 
-    <h1>Home</h1>
+    <!-- Cómo traer variables desde el app.js? : <%= thisIsFromApp %> -->
+    <div class="container-one">
+        <h1>La plataforma comercial del corazón del Caribe</h1>
 
-    <p1>
-        <%= thisIsFromApp %>
-    </p1>
+        <h2 class="undertitle">
+            moving forward into this new era
+        </h2>
+    </div>
 
+    <figure>
+        <img src="https://live.staticflickr.com/5750/21421462738_d8ed2cd757_c.jpg" alt="HP Laptop">
+    </figure>
 
-    <% posts.forEach( (element) => { %>
-        <h1> <%= element.title %> </h1>
+    <div class="scroll-bar">
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/mcdonalds.com" alt="1">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/tacobell.com" alt="">
+            </figure>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://logo.clearbit.com/bk.com" alt="">
+            </figure>
+        </div>
+    </div>
+
+    <% posts.forEach( (element)=> { %>
+        <h1>
+            <%= element.title %>
+        </h1>
         <p1>
             <%= element.body.substring(0,100) + " ..." %>
-            <a href="/about">Read More</a>
+                <a href="/about">Read More</a>
         </p1>
         <% }) %>
 
-<%- include('partials/footer'); -%>
+            <%- include('partials/footer'); -%>
