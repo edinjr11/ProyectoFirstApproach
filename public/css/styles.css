@@ -15,7 +15,7 @@
   color: #1abc9c !important;
 }
 
-h1 {
+.home-title {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   letter-spacing: 2.6px;
@@ -34,7 +34,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-h2 {
+.undertitle {
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
   letter-spacing: 2.6px;
@@ -54,9 +54,11 @@ h2 {
   fill: currentColor;
 }
 
-img {
-  max-width: 50%;
-  text-align: center;
+.colum-img {
+  width: 200%;
+  height: 200%;
+  margin: 0;
+  text-align: left;
 }
 
 figure {
