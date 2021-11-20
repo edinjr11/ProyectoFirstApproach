@@ -1,7 +1,17 @@
 <%- include('partials/header'); -%>
 
-<h1>About</h1>
+<h1>Image Resizer</h1>
 
-<p1> <%= thisIsAbout %> </p1>
+<h2>Upload Photos</h2>
+<form id="upload-form" action="/about" method="post" enctype="multipart/form-data">
+  <h2>Select an image to upload:</h2>
+  <div class="upload-container"><input id="file-picker" type="file" name="image"></div>
+  <div><input type="submit" value="Upload Image"></div>
+</form>
+
+
+
+<hr>
+<p>This app has no official privacy policy. Your data will be uploaded to a service in order to produce a thumbnail. Your images will be public once you upload them and there is no automated way to remove them.</p>
 
 <%- include('partials/footer'); -%>
