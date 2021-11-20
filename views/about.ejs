@@ -9,9 +9,28 @@
   <div><input type="submit" value="Upload Image"></div>
 </form>
 
-
-
+<p id="message"></p>
 <hr>
-<p>This app has no official privacy policy. Your data will be uploaded to a service in order to produce a thumbnail. Your images will be public once you upload them and there is no automated way to remove them.</p>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  
+      const message = document.getElementById('message');
+      const picker = document.getElementById('file-picker');
+  
+      document.getElementById('upload-form').addEventListener('submit', (e) => {
+  
+        message.innerHTML = '';
+  
+        if(!picker.files.length) {
+          message.innerHTML = 'Please select an image to upload.';
+          alert('Please select an image to upload.');
+          e.preventDefault();
+          return false;
+        }
+      });
+  
+    });
+  </script>
 
 <%- include('partials/footer'); -%>
